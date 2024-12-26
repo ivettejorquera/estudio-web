@@ -10,12 +10,12 @@ sequenceDiagram
     activate server
     Note left of server: El servidor recibe la nueva nota como JSON
     server-->>browser: Redirección a /notes
-    desactive server
+    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
-    desactive server
+    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
